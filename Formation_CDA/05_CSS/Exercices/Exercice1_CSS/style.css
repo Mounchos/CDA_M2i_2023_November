@@ -1,0 +1,49 @@
+
+body {
+    font-family: 'Sora', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f3f3f3;
+  }
+  .card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 400px;
+  }
+  .card img {
+    width: 90%;
+    border-radius: 15px;
+    display: block;
+    margin: 20px;
+  }
+  .card-content {
+    padding: 20px;
+  }
+  .badge {
+    background-color: #E6D6FC;
+    color: #883AE1;
+    font-size: 0.80em;
+    padding: 6px 24px;
+    border-radius: 50px;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  .card-title {
+    margin: 0;
+    color: #333;
+    font-size: 1.5em;
+  }
+  .card-text {
+    color: #777;
+    line-height: 1.5;
+    margin: 10px 0 0;
+  }
+.autor {
+    color:#777;
+    margin-top: 50px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styleIndex.css">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <h1>Karim BENZEMA</h1>
+        <h2>Contact</h2>
+        <nav>
+           <a href="./index.html">Accueil</a>
+           <a href="./Horaires.html">Horaires</a>
+           <a href="./Contact.html">Contact</a>
+        </nav>
+    </header>
+    <main class="form">
+        <fieldset>
+        <legend>Qui êtes-vous?</legend>
+        <form action="#" method="post">
+            <label for="nom">Nom : </label>
+            <input type="text" name="nom" placeholder="Martin"> <br>
+            <label for="prenom">Prénom : </label>
+            <input type="text" name="prenom" placeholder="John"><br>
+            <label for="date">Date de naissance :</label>
+            <input type="date"> <br>
+            <label for="genre">Genre : </label>
+            <input type="radio" id="homme" name="genre" value="homme">
+            <label for="homme">Homme</label>
+            <input type="radio" id="femme" name="genre" value="femme">
+            <label for="femme">Femme</label>
+ 
+       
+    </fieldset>
+    <fieldset>
+        <legend>Sujet de votre opinion</legend>
+            <label for="urgent">Est-ce urgent ?</label>
+            <input type="checkbox" name="urgent"> <br>
+            <label for="pb">Type de problème :</label>
+            <select id="pb" name="pb">
+                <option value="#">Je n'arrive pas à accéder à mon compte</option>
+                <option value="#">Je crois que j'ai été piraté</option>
+                <option value="#">Je n'arrive pas à changer mon mot de passe</option>
+                <option value="#">J'ai perdu mes identifiants</option>
+              </select><br>
+       
+    </fieldset>
+    <fieldset>
+        <legend>Commentaire</legend>
+        <label for="comment">Notes :</label>
+        <textarea name="comment" id="" cols="60" rows="10"></textarea>
+    </fieldset>
+    <button inputmode="submit" class="button">Envoyer ma question</button>
+</form>
+    </main>
+</body>
+</html>
