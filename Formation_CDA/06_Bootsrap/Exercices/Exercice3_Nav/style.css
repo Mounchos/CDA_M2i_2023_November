@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+}
+
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #f8f9fa;
+}
+ 
+.nav-link {
+    color: #f8f9fa;
+}
+ 
+li .nav-item .dropdown::marker{
+    list-style: none;
+}
+ 
+#icone {
+    list-style: none;
+}
+.navbar svg {
+    margin-right: 10px;
+}
+
+
+main{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+
