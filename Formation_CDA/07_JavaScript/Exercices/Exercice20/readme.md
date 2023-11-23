@@ -30,3 +30,12 @@ chaine : actgactgaa
 sequence : actgactg
 Il y a 80.0% de "actgactg" dans la chaine "actgactgaa"
 ```
+
+^: C'est un ancrage qui indique que le motif recherché doit commencer au début de la chaîne. En d'autres termes, la correspondance doit avoir lieu dès le début de la chaîne.
+
+[atcg]+: C'est une classe de caractères entre crochets [...] qui spécifie les caractères autorisés. Dans ce cas, [atcg] signifie que les caractères autorisés sont a, t, c, et g. Le + qui suit signifie que l'un de ces caractères doit apparaître au moins une fois, mais il peut apparaître plusieurs fois de manière consécutive.
+
+/i: C'est un modificateur qui indique que la recherche doit être insensible à la casse. Cela signifie que la regex va correspondre aux lettres minuscules (a, t, c, g) ainsi qu'aux lettres majuscules correspondantes (A, T, C, G).
+
+En résumé, cette expression régulière ^[atcg]+$ vérifie si une chaîne ne contient que des caractères parmi a, t, c, g (indifféremment en majuscules ou en minuscules) et qu'elle ne contient pas d'autres caractères. Elle s'assure que la chaîne ne commence pas par un caractère invalide.
+

@@ -6,7 +6,7 @@ function verificationAdn(adn) {
   function saisieAdn() {
     let adn = prompt("Veuillez entrer une chaîne d'ADN :");
     while (!verificationAdn(adn)) {
-      adn = prompt("La chaîne d'ADN est invalide. Veuillez réessayer :");
+      adn = prompt("Erreur de saisie! La chaîne d'ADN est invalide. Veuillez réessayer :");
     }
     return adn;
   }
@@ -15,16 +15,14 @@ function verificationAdn(adn) {
     const sequenceLength = sequenceAdn.length;
     let count = 0;
   
-    // Parcourir la chaîne d'ADN pour compter les occurrences de la séquence
     for (let i = 0; i <= chaineAdn.length - sequenceLength; i++) {
       const sousChaine = chaineAdn.slice(i, i + sequenceLength);
       if (sousChaine === sequenceAdn) {
         count++;
       }
     }
-  
-    // Calcule le pourcentage d'occurrences
-    const pourcentage = (count / (chaineAdn.length - sequenceLength + 1)) * 100;
+
+    const pourcentage = (count / (chaineAdn.length / sequenceLength)) * 100;
     return pourcentage.toFixed(2);
   }
  
