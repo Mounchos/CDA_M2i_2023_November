@@ -25,6 +25,7 @@ usernameInput.addEventListener('input', function() {
   }
 });
 
+
 passwordInput.addEventListener('input', function() {
   if (passwordInput.value === '') {
     passwordInput.classList.add('error');

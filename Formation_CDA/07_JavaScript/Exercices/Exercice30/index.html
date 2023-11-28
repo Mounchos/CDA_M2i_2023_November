@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaux</title>
+</head>
+<body>
+    <form id="animalForm">
+        <label for="typeAnimal">Type d'animal:</label>
+        <input type="text" id="typeAnimal" required>
+        <label for="nomAnimal">Nom de l'animal:</label>
+        <input type="text" id="nomAnimal" required>
+        <button type="submit">Ajouter</button>
+    </form>
+
+    <table id="tableauAnimaux">
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Animal</th>
+            </tr>
+        </thead>
+        <tbody id="listeAnimaux"></tbody>
+    </table>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
