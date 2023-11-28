@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 28</title>
+</head>
+<body>
+<main>
+  <h1>Ajout de personnes</h1>
+  <form id="personForm">
+    <label for="nom">Nom:</label>
+    <input type="text" id="nom" required>
+    <label for="prenom">Prénom:</label>
+    <input type="text" id="prenom" required>
+    <label for="dateNaissance">Date de naissance:</label>
+    <input type="date" id="dateNaissance" required>
+    <button type="button" id="ajouter">Ajouter</button>
+  </form>
+
+  <h2>Liste des personnes</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Nom</th>
+        <th>Prénom</th>
+        <th>Date de naissance</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody">
+    </tbody>
+  </table>
+</main>
+<script src="main.js"></script>
+</body>
+</html>
