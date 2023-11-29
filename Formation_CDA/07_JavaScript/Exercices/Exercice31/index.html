@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personnes</title>
+</head>
+<body>
+    <form id="personForm">
+        <label for="nom">Nom de famille :</label>
+        <input type="text" id="nom" required>
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" required>
+        <button type="submit">Ajouter</button>
+    </form>
+
+    <table id="tableauPersonnes">
+        <thead>
+            <tr>
+                <th>Prénom</th>
+                <th>Nom de famille</th>
+                <th>Nom complet</th>
+            </tr>
+        </thead>
+        <tbody id="listePersonnes"></tbody>
+    </table>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>

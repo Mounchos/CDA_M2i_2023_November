@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ma Liste de Tâches</title>
+</head>
+<body>
+    <h1>Ma Liste de Voitures</h1>
+    <button id="openModalBtn">Ajouter une voiture &#128664;</button>
+
+    <table id="brandTable">
+        <thead>
+            <tr>
+                <th>Voiture</th>
+                <th>Supprimer</th>
+                <th>Modifier</th>
+            </tr>
+        </thead>
+        <tbody>
+        <!-- les lignes de voitures seront ajoutées ici -->
+        </tbody>
+    </table>
+
+
+    <div id="brandModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Ajouter une nouvelle voiture !</h2>
+            <form id="brandForm">
+                <input type="text" id="brandInput" placeholder="Entrez la marque du véhicule..." required>
+                <button type="submit">Ajouter le véhicule &#9989;</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

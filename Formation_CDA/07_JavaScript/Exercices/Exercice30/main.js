@@ -32,11 +32,15 @@ import { Chien, Chat, Cheval } from './animal.js';
             document.getElementById('nomAnimal').value = '';
 
             afficherAnimaux();
+        
         });
 
         function afficherAnimaux() {
             const tbody = document.getElementById('listeAnimaux');
-            tbody.innerHTML = '';
+            
+            while (tbody.firstChild) {
+                tbody.removeChild(tbody.firstChild);
+            }
         
             tableauAnimaux.forEach((animal) => {
                 const tr = document.createElement('tr');
@@ -52,3 +56,4 @@ import { Chien, Chat, Cheval } from './animal.js';
                 tbody.appendChild(tr);
             });
         }
+        
