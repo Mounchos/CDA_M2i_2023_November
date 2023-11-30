@@ -91,7 +91,7 @@ table th {
 
 .modal-content {
     background-color: #fff;
-    margin: 15% auto;
+    margin: 29% auto;
     padding: 20px;
     border: 1px solid #ccc;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -142,4 +142,20 @@ table th {
 
 #brandForm button[type="submit"]:hover {
     background-color: #357a38;
+}
+
+#modelInput {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#colorInput {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
