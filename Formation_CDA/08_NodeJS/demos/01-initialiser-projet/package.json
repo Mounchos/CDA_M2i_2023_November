@@ -1,0 +1,15 @@
+{
+  "name": "01-initialiser-projet",
+  "version": "0.0.1",
+  "description": "Mon premier projet Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "projet",
+    "nodejs"
+  ],
+  "author": "Arthur DENNETIERE",
+  "license": "ISC"
+}
