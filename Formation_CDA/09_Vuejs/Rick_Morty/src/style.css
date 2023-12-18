@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'get_schwifty';
+    src: url('/src/assets/fonts/get_schwifty.ttf') format('truetype'),
+        url('/src/assets/fonts/get_schwifty.otf') format('opentype'),
+        url('/src/assets/fonts/get_schwifty.woff') format('woff'),
+        url('/src/assets/fonts/get_schwifty.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap')
+        format('css');
+}
