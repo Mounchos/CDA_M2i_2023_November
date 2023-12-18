@@ -69,9 +69,9 @@ const removeFilter = (key) => {
                 :searchInputValue="searchInputValue"
                 :filterData="filterData" />
         </main>
-        <theFooter
+        <!-- <theFooter
             class="footer"
-            v-once />
+            v-once /> -->
     </div>
 </template>
 

@@ -13,20 +13,20 @@ const emit = defineEmits(['removeFilter']);
 <template>
     <div
         class="flex items-center justify-between w-full gap-2 px-3 py-1 text-white rounded-lg bg-neutral-800 superSmall:w-fit animate__animated animate__fadeInDown">
-        <template v-if="filterName == 'alive'">Vivo</template>
-        <template v-else-if="filterName == 'dead'">Morto</template>
+        <template v-if="filterName == 'alive'">Alive</template>
+        <template v-else-if="filterName == 'dead'">Dead</template>
 
-        <template v-else-if="filterName == 'human'">Humano</template>
-        <template v-else-if="filterName == 'robot'">Robô</template>
+        <template v-else-if="filterName == 'human'">Human</template>
+        <template v-else-if="filterName == 'robot'">Robot</template>
         <template v-else-if="filterName == 'Mythological Creature'"
-            >Mitologico</template
+            >Mythological Creature</template
         >
 
-        <template v-else-if="filterName == 'female'">Feminino</template>
-        <template v-else-if="filterName == 'male'">Masculino</template>
-        <template v-else-if="filterName == 'genderless'">Sem Gênero</template>
+        <template v-else-if="filterName == 'female'">Female</template>
+        <template v-else-if="filterName == 'male'">Male</template>
+        <template v-else-if="filterName == 'genderless'">Genderless</template>
 
-        <template v-else-if="filterName == 'unknown'">Desconhecido</template>
+        <template v-else-if="filterName == 'unknown'">Unknown</template>
 
         <template v-else>
             {{ filterName.charAt(0).toUpperCase() + filterName.slice(1) }}

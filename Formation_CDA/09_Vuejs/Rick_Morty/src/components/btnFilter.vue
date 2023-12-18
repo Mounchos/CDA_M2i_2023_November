@@ -139,7 +139,7 @@ watch(isMainFilterOpen, () => {
                                 (isGenderFilterOpen = false)
                         "
                         class="flex items-center justify-between w-full px-3 py-1 text-black border-none outline-none bg-slate-50 rounded-xl">
-                        Especie
+                        Species
                         <IconCaretUpFilled v-if="isSpeciesFilterOpen" />
                         <IconCaretDownFilled v-else />
                     </button>
@@ -155,7 +155,7 @@ watch(isMainFilterOpen, () => {
                                     (event) => emitFilters(event, 'species')
                                 "
                                 class="flex items-center justify-between w-full px-3 py-1 text-black border-none outline-none bg-slate-50 rounded-xl">
-                                Humano
+                                Human
                                 <IconUserFilled />
                             </button>
                         </li>
@@ -181,7 +181,7 @@ watch(isMainFilterOpen, () => {
                                     (event) => emitFilters(event, 'species')
                                 "
                                 class="flex items-center justify-between w-full px-3 py-1 text-black border-none outline-none bg-slate-50 rounded-xl">
-                                Robô
+                                Robot
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 24 24"
@@ -214,7 +214,7 @@ watch(isMainFilterOpen, () => {
                                     (event) => emitFilters(event, 'species')
                                 "
                                 class="flex items-center justify-between w-full px-3 py-1 text-black border-none outline-none bg-slate-50 rounded-xl">
-                                Mitologico
+                                Mythological creature
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 24 24"
@@ -235,7 +235,7 @@ watch(isMainFilterOpen, () => {
                                     (event) => emitFilters(event, 'species')
                                 "
                                 class="flex items-center justify-between w-full px-3 py-1 text-black border-none outline-none bg-slate-50 rounded-xl">
-                                Desconhecido
+                                Unknown
                                 <IconQuestionMark />
                             </button>
                         </li>
@@ -265,7 +265,7 @@ watch(isMainFilterOpen, () => {
                                 value="alive"
                                 @click="(event) => emitFilters(event, 'status')"
                                 class="flex items-center justify-between w-full px-3 py-1 text-black border-none outline-none bg-slate-50 rounded-xl">
-                                Vivo
+                                Alive
                                 <IconCircleFilled class="text-green-500" />
                             </button>
                         </li>
@@ -276,7 +276,7 @@ watch(isMainFilterOpen, () => {
                                 value="dead"
                                 @click="(event) => emitFilters(event, 'status')"
                                 class="flex items-center justify-between w-full px-3 py-1 text-black border-none outline-none bg-slate-50 rounded-xl">
-                                Morto
+                                Dead
                                 <IconCircleFilled class="text-red-500" />
                             </button>
                         </li>
@@ -287,7 +287,7 @@ watch(isMainFilterOpen, () => {
                                 value="unknown"
                                 @click="(event) => emitFilters(event, 'status')"
                                 class="flex items-center justify-between w-full px-3 py-1 text-black border-none outline-none bg-slate-50 rounded-xl">
-                                Desconhecido
+                                Unknown
                                 <IconCircleFilled class="text-gray-500" />
                             </button>
                         </li>
@@ -303,7 +303,7 @@ watch(isMainFilterOpen, () => {
                                 (isSpeciesFilterOpen = false)
                         "
                         class="flex items-center justify-between w-full px-3 py-1 text-black border-none outline-none bg-slate-50 rounded-xl">
-                        Gênero
+                        Gender
                         <IconCaretUpFilled v-if="isGenderFilterOpen" />
                         <IconCaretDownFilled v-else />
                     </button>
@@ -317,7 +317,7 @@ watch(isMainFilterOpen, () => {
                                 value="female"
                                 @click="(event) => emitFilters(event, 'gender')"
                                 class="flex items-center justify-between w-full px-3 py-1 text-black border-none outline-none bg-slate-50 rounded-xl">
-                                Feminino
+                                Female
                                 <IconGenderFemale />
                             </button>
                         </li>
@@ -328,7 +328,7 @@ watch(isMainFilterOpen, () => {
                                 value="male"
                                 @click="(event) => emitFilters(event, 'gender')"
                                 class="flex items-center justify-between w-full px-3 py-1 text-black border-none outline-none bg-slate-50 rounded-xl">
-                                Masculino
+                                Male
                                 <IconGenderMale />
                             </button>
                         </li>
@@ -339,7 +339,7 @@ watch(isMainFilterOpen, () => {
                                 value="genderless"
                                 @click="(event) => emitFilters(event, 'gender')"
                                 class="flex items-center justify-between w-full px-3 py-1 text-black border-none outline-none bg-slate-50 rounded-xl">
-                                Sem Gênero
+                                Genderless
                                 <IconGenderGenderless />
                             </button>
                         </li>
@@ -350,7 +350,7 @@ watch(isMainFilterOpen, () => {
                                 value="unknown"
                                 @click="(event) => emitFilters(event, 'gender')"
                                 class="flex items-center justify-between w-full px-3 py-1 text-black border-none outline-none bg-slate-50 rounded-xl">
-                                Desconhecido
+                                Unknown
                                 <IconQuestionMark />
                             </button>
                         </li>

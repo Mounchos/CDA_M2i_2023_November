@@ -47,10 +47,10 @@ const props = defineProps({
                                 : 'text-gray-400'
                         " />
 
-                    <template v-if="data.status === 'Alive'">Vivo</template>
-                    <template v-if="data.status === 'Dead'">Morto</template>
+                    <template v-if="data.status === 'Alive'">Alive</template>
+                    <template v-if="data.status === 'Dead'">Dead</template>
                     <template v-if="data.status === 'unknown'"
-                        >Desconhecido</template
+                        >Unknown</template
                     >
                 </li>
                 <li
@@ -93,24 +93,24 @@ const props = defineProps({
                         class="me-1" />
 
                     <template v-if="data.species.split(' ')[0] === 'Human'"
-                        >Humano</template
+                        >Human</template
                     >
                     <template v-else-if="data.species.split(' ')[0] === 'Robot'"
-                        >Robô</template
+                        >Robot</template
                     >
                     <template
                         v-else-if="data.species.split(' ')[0] === 'unknown'"
-                        >Desconhecido</template
+                        >Unknown</template
                     >
                     <template
                         v-else-if="
                             data.species.split(' ')[0] === 'Mythological'
                         "
-                        >Mitologico</template
+                        >Mythological</template
                     >
                     <template
                         v-else-if="data.species.split(' ')[0] === 'Humanoid'"
-                        >Humanoide</template
+                        >Humanoid</template
                     >
                     <template v-else>{{ data.species.split(' ')[0] }}</template>
                 </li>
@@ -127,19 +127,19 @@ const props = defineProps({
                         class="me-1" />
 
                     <template v-if="data.gender === 'Male'">
-                        Masculino
+                        Male
                     </template>
 
                     <template v-else-if="data.gender === 'Female'">
-                        Feminino
+                        Female
                     </template>
 
                     <template v-else-if="data.gender === 'Genderless'">
-                        Sem gênero
+                        Genderless
                     </template>
 
                     <template v-else-if="data.gender === 'unknown'">
-                        Desconhecido
+                        Unknown
                     </template>
 
                     <template v-else>{{ data.gender }}</template>
@@ -162,17 +162,17 @@ const props = defineProps({
                             data.location.name.split(' ')[0] ===
                             'Post-Apocalyptic'
                         "
-                        >Pós-Apocalíptico</template
+                        >Post-Apocalyptic</template
                     >
                     <template
                         v-else-if="
                             data.location.name.split(' ')[0] === 'unknown'
                         "
-                        >Desconhecido</template
+                        >Unknown</template
                     >
                     <template
                         v-else-if="data.location.name.split(' ')[0] === 'Earth'"
-                        >Terra</template
+                        >Earth</template
                     >
                     <template v-else>
                         {{

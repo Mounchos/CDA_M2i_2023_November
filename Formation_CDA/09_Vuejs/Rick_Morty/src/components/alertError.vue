@@ -9,7 +9,7 @@ import { IconAlertCircleFilled } from '@tabler/icons-vue';
         <span
             class="flex items-center justify-between w-full gap-2 text-red-700">
             <IconAlertCircleFilled />
-            Nenhum Resultado Encontrado
+            Aucun résultat trouvé
         </span>
     </div>
 </template>

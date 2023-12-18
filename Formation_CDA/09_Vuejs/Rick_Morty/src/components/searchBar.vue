@@ -38,7 +38,7 @@ const onUpdateFilterData = (value) => {
                 <IconSearch />
             </label>
             <input
-                placeholder="Digite O Nome Do Personagem"
+                placeholder="Enter character name"
                 v-model="searchInputValue"
                 @input="onInputSearch"
                 class="w-full h-full p-2 border-none outline-none bg-neutral-800 placeholder-slate-50 opacity-60"
